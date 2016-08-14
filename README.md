@@ -60,7 +60,7 @@ cp -r vim ~/.vim
 ```
 
 # 4. config git
-4.1 basic conf
+## 4.1 basic conf
 ```bash
 git config --global user.name brun
 git config --global user.email "zhibo501@gmail.com"
@@ -83,10 +83,11 @@ git config --global alias.last 'log -1'
 ```
 
 The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here.
-[Pro Git](https://git-scm.com/book/en/v2)
+
+**[Pro Git](https://git-scm.com/book/en/v2)**
 
 
-4.2 ssh for github
+## 4.2 ssh for github
 create ssh key
 ```bash
 ssh-keygen -t rsa -C "zhibo501@gmail.com"
@@ -96,7 +97,7 @@ paste the content of id_rsa.pub to github
 
 Settings -> SSH and GPG keys -> New SSH key
 
-4.3 clone repo 
+## 4.3 clone repo 
 ```bash
 git clone git@github.com:zhibo501/work_env.git
 ```
