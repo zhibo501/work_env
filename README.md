@@ -1,6 +1,8 @@
 # repo infos
 This repo is a project for building my work environment anywhere.
+
 All the following commands and configure files is under ubuntu linux,
+
 so, first of all, you should have a ubuntu box, and configure the **source.list**. 
 
 
@@ -39,8 +41,10 @@ apt-get install git
 # others
 apt-get install wget
 apt-get install curl
+apt-get install man
 
 ```
+
 
 # 2. config bash
 bashrc
@@ -60,7 +64,27 @@ cp -r vim ~/.vim
 ```bash
 git config --global user.name brun
 git config --global user.email "zhibo501@gmail.com"
+git config --global core.editor vim
+git config --global core.autocrlf input
+
+git config --global push.default simple
+
+git config --global diff.tool vimdiff2
+git config --global merge.tool vimdiff3
+
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.br branch
+git config --global alias.st status
+git config --global alias.dt difftool
+git config --global alias.mt mergetool
+git config --global alias.unstage 'reset HEAD'
+git config --global alias.last 'log -1'
 ```
+
+The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here.
+[Pro Git](https://git-scm.com/book/en/v2)
+
 
 4.2 ssh for github
 create ssh key
@@ -69,7 +93,10 @@ ssh-keygen -t rsa -C "zhibo501@gmail.com"
 cat ~/.ssh/id_rsa.pub
 ```
 paste the content of id_rsa.pub to github
+
 Settings -> SSH and GPG keys -> New SSH key
 
 4.3 clone repo 
+```bash
 git clone git@github.com:zhibo501/work_env.git
+```
