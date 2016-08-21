@@ -1,3 +1,13 @@
+"
+""                       __   _(_)_ __ ___  _ __ ___
+"                       \ \ / / | '_ ` _ \| '__/ __|
+"                        \ V /| | | | | | | | | (__
+"                       (_)_/ |_|_| |_| |_|_|  \___|
+"                                              
+"                       
+"                        Author: Brun <zhibo501@gmail.com>
+"                        Source: https://github.com/zhibo501/work_env
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -49,7 +59,7 @@ set incsearch " BUT do highlight as you type you search phrase
 set so=10 " Keep 10 lines (top/bottom) for scope
 set novisualbell " don't blink
 set noerrorbells " no noises
-set statusline=%F%y%m%r\ [ASCII=%03.3b]\ [HEX=%02.2B]\ [POS=%04l,%04v][%p%%]
+set statusline=%F%y[%{&ff}]%m%r[ASCII=%03.3b][HEX=%02.2B][POS=%04l,%04v][%p%%]
 set laststatus=2 " always show the status line
 
 
