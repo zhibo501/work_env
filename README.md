@@ -21,6 +21,7 @@ apt-get install binutils
 # c/c++
 apt-get install libc6-dev
 apt-get install build-essential  # gcc g++ make ...
+apt-get install devscripts
 apt-get install autoconf automake
 apt-get install gdb
 apt-get install ctags
@@ -102,6 +103,35 @@ Settings -> SSH and GPG keys -> New SSH key
 git clone git@github.com:zhibo501/work_env.git
 ```
 
+# 5. config go
+## 5.1 basic conf
+set GOPATH in .bashrc
+```bash
+export GOPATH=$HOME/goCode
+```
+then run `go env` to check GOROOT/GOPATH has been seted.
+```bash
+mydesktop:~$ go env
+GOARCH="amd64"
+GOBIN=""
+GOEXE=""
+GOHOSTARCH="amd64"
+GOHOSTOS="linux"
+GOOS="linux"
+GOPATH="/home/brun/goCode"
+GORACE=""
+GOROOT="/usr/lib/go-1.6"
+GOTOOLDIR="/usr/lib/go-1.6/pkg/tool/linux_amd64"
+GO15VENDOREXPERIMENT="1"
+CC="gcc"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0"
+CXX="g++"
+CGO_ENABLED="1"
+```
+
+## 5.2 sublime text 3
+
+
 
 ## PS.
 ```bash
@@ -109,3 +139,4 @@ docker run -dit --name mytest -v /Users:/Users --net host -p 4000:4000 myubuntu 
 # 设置本地环境UTF8，以支持中文输入
 docker exec -it 8df env LANG=C.UTF-8 /bin/bash
 ```
+
