@@ -1,0 +1,16 @@
+apt-get install shadowsocks
+
+vi /etc/shadowsocks/config.json
+{
+    "server":"xxx.xxx.xxx.xxx",
+    "server_port":8888,
+    "local_address": "127.0.0.1",
+    "local_port":1080,
+    "password":"xxxxxxxx",
+    "timeout":300,
+    "method":"aes-256-cfb",
+    "fast_open": false,
+    "workers": 1
+}
+
+ssserver -c /etc/shadowsocks/config.json -q >ss.log 2>&1 &
