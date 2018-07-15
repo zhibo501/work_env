@@ -160,10 +160,10 @@ Install **GoSublime** :
 
 **sublime3 shortcuts : [link](sublime3-shortcuts.md)**
 
+
 ## PS.
 ```bash
 docker run -dit --name mytest -v /Users:/Users --net host -p 4000:4000 myubuntu /bin/bash
 # 设置本地环境UTF8，以支持中文输入
 docker exec -it 8df env LANG=C.UTF-8 /bin/bash
 ```
-
