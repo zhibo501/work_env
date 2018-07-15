@@ -130,8 +130,35 @@ CGO_ENABLED="1"
 ```
 
 ## 5.2 sublime text 3
+config (**Preferences** -> **Settings User**) :
 
+```json
+{
+    "font_size": 15,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "ignored_packages":[],
+}
+```
 
+------
+
+Install **package control** for sublime : **[packagecontrol.io](https://packagecontrol.io/installation)**
+
+------
+
+Install **GoSublime** :
++ **shift + command + p**
++ **install** -> **Package control:install package**
++ **GoSublime** -> install GoSublime
+
+**[GoSublime homepage](https://github.com/DisposaBoy/GoSublime)**
+
+------
+
+**sublime3 official documentation index : [link](https://www.sublimetext.com/docs/3/)**
+
+**sublime3 shortcuts : [link](sublime3-shortcuts.md)**
 
 ## PS.
 ```bash
