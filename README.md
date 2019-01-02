@@ -15,6 +15,11 @@ apt-get update
 # editor
 apt-get install vim
 
+# basic
+apt-get install wget
+apt-get install curl
+apt-get install man
+
 # bin utils
 apt-get install binutils
 
@@ -27,6 +32,9 @@ apt-get install gdb
 apt-get install ctags
 apt-get install indent
 
+# rust
+curl https://sh.rustup.rs -sSf | sh
+
 # golang
 apt-get install golang
 
@@ -34,15 +42,12 @@ apt-get install golang
 apt-get install bash
 apt-get install bash-completion
 apt-get install gawk
-apt-get install python
+#apt-get install python
 
 # version controll
 apt-get install git
 
 # others
-apt-get install wget
-apt-get install curl
-apt-get install man
 
 ```
 
@@ -81,6 +86,10 @@ git config --global alias.dt difftool
 git config --global alias.mt mergetool
 git config --global alias.unstage 'reset HEAD'
 git config --global alias.last 'log -1'
+
+#in proxy environment
+#git config --global http.sslVerify false
+
 ```
 
 The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here.
@@ -103,8 +112,24 @@ Settings -> SSH and GPG keys -> New SSH key
 git clone git@github.com:zhibo501/work_env.git
 ```
 
-# 5. config go
-## 5.1 basic conf
+# 5. config rust
+Both "**cainfo**" and "**git-fetch-with-cli**" SHOULD be set in proxy environment.
+cat ~/.cargo/config
+```toml
+[http]
+proxy = "http://127.0.0.1:3128"
+cainfo = "/etc/ssl/certs/ca-bundle.crt"
+#sslVerify = false
+check-revoke = false
+
+[net]
+retry = 3
+git-fetch-with-cli = true
+
+```
+
+# 6. config go
+## 6.1 basic conf
 set GOPATH in .bashrc
 ```bash
 export GOPATH=$HOME/goCode
@@ -129,7 +154,7 @@ CXX="g++"
 CGO_ENABLED="1"
 ```
 
-## 5.2 sublime text 3
+## 6.2 sublime text 3
 config (**Preferences** -> **Settings User**) :
 
 ```json
