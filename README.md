@@ -28,6 +28,7 @@ apt-get install libc6-dev
 apt-get install build-essential  # gcc g++ make ...
 apt-get install devscripts
 apt-get install autoconf automake
+apt-get install cmake
 apt-get install gdb
 apt-get install ctags
 apt-get install indent
