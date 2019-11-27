@@ -115,6 +115,7 @@ git clone git@github.com:zhibo501/work_env.git
 
 # 5. config rust
 Both "**cainfo**" and "**git-fetch-with-cli**" SHOULD be set in proxy environment.
+The **[cargo book](https://doc.rust-lang.org/cargo/reference/source-replacement.html)**. 
 cat ~/.cargo/config
 ```toml
 [http]
