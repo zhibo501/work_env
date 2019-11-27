@@ -127,6 +127,13 @@ check-revoke = false
 retry = 3
 git-fetch-with-cli = true
 
+
+[source.crates-io]
+replace-with = 'ustc'
+
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+
 ```
 
 # 6. config go
